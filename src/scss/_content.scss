@@ -1,0 +1,42 @@
+.gallery {
+  padding-bottom: 50px;
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &-item {
+      position: relative;
+    }
+
+    &-item:hover &-image {
+      opacity: .3;
+    }
+
+    &-item:hover &-link {
+      opacity: 1;
+    }
+
+    &-link {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity .3s ease-in;
+      color: #000000;
+      font-size: 36px;
+      font-weight: 700;
+      z-index: 2;
+    }
+
+    &-image {
+      width: 360px;
+      height: 500px;
+      object-fit: cover;
+      margin: 15px;
+      transition: opacity .3s ease-in;
+    }
+  }
+}

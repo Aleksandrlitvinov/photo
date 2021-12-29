@@ -1,0 +1,62 @@
+.footer {
+  background-color: #242424;
+  width: 100%;
+
+  &__inner {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__social {
+
+  }
+
+  &__logo-name {
+    font-family: 'Cormorant Garamond', serif;
+    color: #FFF;
+    font-size: 24px;
+    text-transform: uppercase;
+    max-width: 150px;
+    padding-bottom: 10px;
+  }
+}
+
+.contacts {
+  font-family: 'Roboto', sans-serif;;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #FFF;
+
+  &__title {
+    color: #FFF;
+    font-size: 20px;
+  }
+
+  &__item {
+    display: flex;
+  }
+}
+
+
+.social__list {
+  display: flex;
+  max-width: 150px;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  fill: #FFF;
+  margin-right: 25px;
+}
+
+.contacts-icon {
+  width: 35px;
+  height: 15px;
+  fill: #cccccc;
+}

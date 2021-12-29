@@ -1,0 +1,36 @@
+@import 'reset';
+@import 'header';
+@import 'content';
+@import 'about';
+@import 'footer';
+@import '_query.scss';
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
