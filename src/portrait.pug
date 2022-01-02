@@ -1,0 +1,18 @@
+html(lang="en")
+    include html/head
+    body 
+      .wrapper
+        include html/header
+        main.main 
+          section.gallery
+            .container
+              .gallery__inner
+                .gallery__items
+                  .gallery__items-item
+                    img(class="gallery__items-image" src="images/10.jpg" alt="image")
+                  .gallery__items-item
+                    img(class="gallery__items-image" src="images/11.jpg" alt="image")
+                  .gallery__items-item
+                    img(class="gallery__items-image" src="images/12.jpg" alt="image")
+        include html/footer
+        script(src="js/app.min.js")
