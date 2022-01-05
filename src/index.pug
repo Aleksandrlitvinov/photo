@@ -1,4 +1,5 @@
 -let title = 'NG';
+-let name = 'NG'
 doctype html
 html(lang="en")
     include html/head
@@ -6,6 +7,9 @@ html(lang="en")
       .wrapper
         include html/header
         main.main 
+          a(class="certificate__link" href="#")
+            svg(class="gift-icon")
+              use(xlink:href="images/sprite.svg#gift")
           section.gallery
             .container
               .gallery__inner
@@ -13,31 +17,53 @@ html(lang="en")
                   .gallery__items-item
                     a(class="gallery__items-link" href="./faith.html" target="_blank")
                      p.gallery__items-title Faith Oni
-                    img(class="gallery__items-image" src="images/faith_oni/faith_oni1.jpg" alt="image")
-                  
+                    img(class="gallery__items-image" src="images/faith_oni/faith_oni1.jpg" alt="image")                 
                   .gallery__items-item
                     a(class="gallery__items-link" href="./mary.html" target="_blank") 
                      p.gallery__items-title Mary
-                    img(class="gallery__items-image" src="images/mary_perova/mary_perova1.jpg" alt="image")
-                  
+                    img(class="gallery__items-image" src="images/mary_perova/mary_perova1.jpg" alt="image")                
                   .gallery__items-item
                     a(class="gallery__items-link" href="merian.html" target="_blank")
                       p.gallery__items-title Merian
-                    <img class="gallery__items-image" src="images/merian/merian1.jpg" alt="image">
-                 
+                    <img class="gallery__items-image" src="images/merian/merian1.jpg" alt="image">                
                   .gallery__items-item
                     a(class="gallery__items-link" href="museum.html" target="_blank")
                       p.gallery__items-title Museum
-                    img(class="gallery__items-image" src="images/museum/museum1.jpg" alt="image")
-            
+                    img(class="gallery__items-image" src="images/museum/museum1.jpg" alt="image")         
                   .gallery__items-item
                     a(href="kateryna.html" class="gallery__items-link" target="_blank")
                       p.gallery__items-title Kateryna
                     img(class="gallery__items-image" src="images/kateryna_serhiiets/kateryna_serhiiets1.jpg" alt="image")
-           
                   .gallery__items-item
                     a(class="gallery__items-link" href="vladlena.html" target="_blank")
                       p.gallery__items-title Vladlena
                     img(class="gallery__items-image" src="images/vladlena/vladlena1.jpg" alt="image")
+                  .gallery__items-item
+                    a(class="gallery__items-link" href="angel.html" target="_blank")
+                      p.gallery__items-title Angel
+                    img(class="gallery__items-image" src="images/angel/angel1.jpg" alt="image")
+                  .gallery__items-item
+                    a(class="gallery__items-link" href="nika.html" target="_blank")
+                      p.gallery__items-title Nika
+                    img(class="gallery__items-image" src="images/nika/nika13.jpg" alt="image")
+                  .gallery__items-item
+                    a(class="gallery__items-link" href="valeria.html" target="_blank")
+                      p.gallery__items-title Valeria
+                    img(class="gallery__items-image" src="images/valeria/valeria4.jpg" alt="image")
+                  .gallery__items-item
+                    a(class="gallery__items-link" href="kris.html" target="_blank")
+                      p.gallery__items-title Kris
+                    img(class="gallery__items-image" src="images/kris/kris1.jpg" alt="image")
+                  .gallery__items-item
+                    a(class="gallery__items-link" href="lamusa.html" target="_blank")
+                      p.gallery__items-title La Musa
+                    img(class="gallery__items-image" src="images/la_musa/la_musa22.jpg" alt="image")
         include html/footer
+        .popup 
+          .popup__content
+            img(class="popup__img" src="./images/certificate1.jpg")
+            img(class="popup__img2" src="./images/certificate2.jpg")
+            a(class="popup__btn" href="")
+              svg(class="popup__icon")
+                use(xlink:href="images/sprite.svg#arrow")
         script(src="js/app.min.js")

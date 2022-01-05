@@ -34,3 +34,72 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
+.popup{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease-in-out;
+  z-index: 5;
+}
+
+.popup__img{
+  transform: translateY(-100%);
+  transition: all .8s ease-in-out;
+}
+
+.popup.open{
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup.open .popup__img{
+  transform: translateY(0);
+}
+
+.popup__content{
+  position: relative;
+  max-width: 500px;
+  margin: 20px auto;
+  transition: all .8s ease-in-out;
+}
+
+.popup__img, .popup__img2{
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.popup__img2{
+  display: none;
+}
+
+.popup__btn{
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  width: 50px;
+  height: 50px;;
+}
+
+.popup__icon{
+  width: 40px;
+  height: 40px;
+}
+
+
+.certificate__link{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50px;
+}
+
+.gift-icon{
+  width: 80px;
+  fill: #2a075f
+}
